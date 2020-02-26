@@ -1,6 +1,11 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
 
+/*definindo variavel de cor*/
+:root{
+    --primary: #7159c1;
+}
+
 body{
     height: 100vh;
     background-color: #efefefef;
@@ -24,7 +29,7 @@ body{
 }
 
 h4{
-    color:#7159c1;
+    color:var(--primary);
     font-size: 20px;
     font-weight: bold;
     margin: 0;
@@ -47,4 +52,24 @@ h4{
 audio{
     width: 100%;
     margin-top: 30px;
+}
+
+#play-pause{
+    background-color:var(--primary);
+}
+#vol{
+    color: var(--primary);
+}
+
+input[type="range"]::-webkit-scrollbar-thumb{
+    /*maneira de alterar no chorme*/
+    background-color: var(--primary);
+}
+input[type="range"]::-moz-range-thumb{
+    /*maneira de alterar no mozila*/
+    background-color: var(--primary);
+}
+input[type="range"]::-ms-thumb{
+    /*maneira de alterar no microsoft*/
+    background-color: var(--primary);
 }
